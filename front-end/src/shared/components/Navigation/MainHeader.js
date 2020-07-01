@@ -4,7 +4,7 @@ import './MainHeader.css'
 
 const MainHeader = props => {
     return (
-        <header class="main-header">
+        <header className="main-header">
             {props.children}
         </header>
     )

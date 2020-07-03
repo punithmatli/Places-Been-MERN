@@ -18,15 +18,15 @@ const DUMMY_PLACES = [
     },
     {
         id: 'p2',
-        title: 'Empire State Building',
-        description: 'One of the most famous sky scrapers in the world',
-        imageUrl: 'https://untappedcities.com/wp-content/uploads/2015/07/Flatiron-Building-Secrets-Roof-Basement-Elevator-Sonny-Atis-GFP-NYC_5.jpg',
-        address: '20 W 34th St, New York, NY 10001, United States',
+        title: 'Charminar',
+        description: 'One of the most famous monuments in India',
+        imageUrl: 'https://i2.wp.com/natureconservation.in/wp-content/uploads/2018/03/95.jpg',
+        address: 'Hyderabad, India',
         location: {
-            lat: 40.7484405,
-            lng: -73.9856644
+            lat: 17.3615636,
+            lng: 78.4746645
         },
-        creator: 'u2'
+        creator: 'u1'
     }
 ]
 

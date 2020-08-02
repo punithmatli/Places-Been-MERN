@@ -8,7 +8,6 @@ import UpdatePlace from './places/pages/UpdatePlace'
 import Auth from '../src/user/pages/Auth'
 import MainNavigation from './shared/components/Navigation/MainNavigation'
 import { AuthContext } from './shared/context/auth-context'
-import { useForm } from './shared/hooks/form-hook';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,37 +22,37 @@ const App = () => {
 
   let routes;
 
-  if(isLoggedIn) {
+  if (isLoggedIn) {
     routes = (
       <Switch>
-<Route path="/" exact>
-              <Users />
-            </Route>
-            <Route path="/:userId/places">
-              <UserPlaces />
-            </Route>
-            <Route path="/places/new" exact>
-              <NewPlace />
-            </Route>
-            <Route path="/places/:placeId">
-              <UpdatePlace />
-            </Route>
-            <Redirect to="/" />
+        <Route path="/" exact>
+          <Users />
+        </Route>
+        <Route path="/:userId/places">
+          <UserPlaces />
+        </Route>
+        <Route path="/places/new" exact>
+          <NewPlace />
+        </Route>
+        <Route path="/places/:placeId">
+          <UpdatePlace />
+        </Route>
+        <Redirect to="/" />
       </Switch>
     )
   } else {
     routes = (
       <Switch>
-<Route path="/" exact>
-              <Users />
-            </Route>
-            <Route path="/:userId/places">
-              <UserPlaces />
-            </Route>
-            <Route path="/auth">
-              <Auth />
-            </Route>
-            <Redirect to="/auth" />
+        <Route path="/" exact>
+          <Users />
+        </Route>
+        <Route path="/:userId/places">
+          <UserPlaces />
+        </Route>
+        <Route path="/auth">
+          <Auth />
+        </Route>
+        <Redirect to="/auth" />
       </Switch>
     )
   }

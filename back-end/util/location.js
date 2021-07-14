@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const HttpError = require('../models/http-error')
 
-const API_KEY = '4a95aafdca8d46c09e7bcd8a7c161ec3'
+const API_KEY = process.env.LOCATION_API_KEY
 
 async function getCoordsForAddress(address) {
     const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${API_KEY}`)

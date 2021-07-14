@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "punith",
+        "DB_PASSWORD": "mernproject",
+        "DB_NAME": "merndeploy",
+        "LOCATION_API_KEY": "4a95aafdca8d46c09e7bcd8a7c161ec3",
+        "JWT_KEY": "supersecret_dont_share"
+    }
+}
